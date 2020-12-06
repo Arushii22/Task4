@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Detecting the signs</title>
+  <style media="screen">
+    body {
+      background-color: #e4e4e4;
+    }
+
+    h1 {
+      color: #4ECCA3;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Javascript programs for finding the Sings of the number : </h1>
+  <script type="text/javascript">
+    function getSign(a, b, c) {
+
+      if (Math.sign(a) == 1 && Math.sign(b) == 1 && Math.sign(c) == 1) {
+        alert("Plus");
+      } else if (Math.sign(a) == -1 && Math.sign(b) == -1 && Math.sign(c) == -1) {
+        alert("Minus");
+      } else if (Math.sign(a) == -1 && Math.sign(b) == 1 || Math.sign(c) == 1) {
+        alert("Both have + & - signs");
+      } else if (Math.sign(a) == -1 && Math.sign(b) == -1 || Math.sign(c) == 1) {
+        alert("Both have + & - signs");
+      } else if (Math.sign(a) == 1 && Math.sign(b) == 1 || Math.sign(c) == -1) {
+        alert("Both have + & - signs");
+      } else {
+        alert("Both have + & - signs");
+      }
+
+
+    }
+    getSign(-23, -24, +34);
+    getSign(12,45,+67);
+  </script>
+</body>
+
+</html>
